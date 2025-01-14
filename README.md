@@ -1,9 +1,10 @@
-##Anna's Personal Website!
+## Anna's Personal Website!
+
 ![website-react](https://github.com/user-attachments/assets/63ce946f-9320-4f2d-b5cc-bd9e28ed34d0)
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
-## Getting Started
+# Getting Started
 
 First, run the development server:
 
