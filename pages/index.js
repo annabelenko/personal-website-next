@@ -1,8 +1,9 @@
-import { Emoji } from "../components/Emoji";
+import { Emoji } from "@/components/Emoji";
 
 export default function Home() {
     return (
       <div style={{ textAlign: "center", padding: "50px" }}>
+        <Emoji />
         <h1>Welcome to My Next.js Site!</h1>
         <p>This is a simple Next.js homepage.</p>
         <button
