@@ -300,6 +300,10 @@
     gap: 1.5rem;
   }
   
+  .imageContainer {
+    height: 300px;
+  }
+  
   .projectInfo {
     flex-direction: column;
     gap: 1.5rem;
@@ -348,6 +352,10 @@
   
   .projectsGrid {
     gap: 1rem;
+  }
+  
+  .imageContainer {
+    height: 250px;
   }
   
   .projectCard {
