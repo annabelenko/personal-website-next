@@ -1,6 +1,7 @@
 import { Emoji } from "@/components/Emoji";
 import Navbar from "@/components/Navbar";
 import styles from "@/styles/Home.module.css";
+import Head from 'next/head';
 
 export default function Home() {
   const projects = [
@@ -48,6 +49,10 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <title>Anna Belenko - Software Engineer & Developer</title>
+      </Head>
+      
       <Navbar />
       
       {/* Hero Section */}
