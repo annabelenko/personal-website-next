@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import "./Emoji.module.css";
+import styles from "./Emoji.module.css";
 
 export const Emoji = () => {
   const constraintsRef = useRef(null);
@@ -35,39 +35,39 @@ export const Emoji = () => {
   }, []);
 
   return (
-    <div className="emoji-container">
+    <div className={styles["emoji-container"]}>
       {/* Smiley Container with Pixelated Background */}
-      <div className="smiley-container" ref={constraintsRef}>
-        <div className="pixel-grid">
+      <div className={styles["smiley-container"]} ref={constraintsRef}>
+        <div className={styles["pixel-grid"]}>
           {colors.map((color, index) => (
             <div
               key={index}
-              className="pixel"
+              className={styles.pixel}
               style={{ backgroundColor: color }}
             ></div>
           ))}
         </div>
         <motion.img
-        src="/images/smiley.svg"
+        src="/smiley.svg"
         alt="Smiley face"
-        className="smiley-face"
+        className={styles["smiley-face"]}
         drag
         dragConstraints={constraintsRef}
         />
       </div>
 
       {/* Text Section */}
-      <div className="text-container">
-        <p className="emoji-text">Hello, I'm</p>
-        <h1 className="emoji-text">ANNA :)</h1>
-        <p className="emoji-subtitle">
+      <div className={styles["text-container"]}>
+        <p className={styles["emoji-text"]}>Hello, I'm</p>
+        <h1 className={styles["emoji-text"]}>ANNA :)</h1>
+        <p className={styles["emoji-subtitle"]}>
           A passionate{" "}
           {isMobile ? (
             "designer and software engineer,"
           ) : (
             <>
-              <span className="highlight highlight-yellow">designer</span> and{" "}
-              <span className="highlight highlight-blue">software engineer,</span>
+              <span className={`${styles.highlight} ${styles["highlight-yellow"]}`}>designer</span> and{" "}
+              <span className={`${styles.highlight} ${styles["highlight-blue"]}`}>software engineer,</span>
             </>
           )}{" "}
           bridging the gap between technology and humans.
@@ -78,7 +78,7 @@ export const Emoji = () => {
           href="https://example.com/resume.pdf" // Replace with your actual resume link
           target="_blank"
           rel="noopener noreferrer"
-          className="resume-button"
+          className={styles["resume-button"]}
         >
           Resume
         </a>
