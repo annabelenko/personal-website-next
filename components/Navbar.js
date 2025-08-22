@@ -7,32 +7,22 @@ const Navbar = () => {
       <div className={styles.container}>
         {/* Logo/Brand */}
         <div className={styles.brand}>
-          <Link href="/" className={styles.brandLink}>
+          <a href="#home" className={styles.brandLink}>
             Anna Belenko
-          </Link>
+          </a>
         </div>
 
         {/* Navigation Links */}
         <ul className={styles.navLinks}>
           <li>
-            <Link href="/" className={styles.navLink}>
-              Home
-            </Link>
+            <a href="#projects" className={styles.navLink}>
+              Work
+            </a>
           </li>
           <li>
-            <Link href="/about" className={styles.navLink}>
+            <a href="#about" className={styles.navLink}>
               About
-            </Link>
-          </li>
-          <li>
-            <Link href="/projects" className={styles.navLink}>
-              Projects
-            </Link>
-          </li>
-          <li>
-            <Link href="/contact" className={styles.navLink}>
-              Contact
-            </Link>
+            </a>
           </li>
         </ul>
 

@@ -46,6 +46,20 @@
     z-index: 1;
     cursor: grab;
   }
+
+  /* Grab hint text */
+  .grab-hint {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    color: #999;
+    margin: 0;
+    text-align: center;
+    opacity: 0.8;
+  }
   
   /* Text container */
   .text-container {
@@ -66,13 +80,31 @@
     color: #131919;
     margin: 10px 0;
   }
-  
+
   .emoji-subtitle {
     font-family: "Poppins", sans-serif;
     font-size: 18px;
     color: #666;
     margin-top: 10px;
     line-height: 1.5;
+  }
+  
+  /* Highlight styles */
+  .highlight {
+    font-weight: 500;
+    padding: 3px 6px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .highlight-yellow {
+    background-color: #ffd700;
+    color: #131919;
+  }
+  
+  .highlight-blue {
+    background-color: #93acfc;
+    color: #131919;
   }
   
   /* Resume button */
@@ -82,7 +114,7 @@
     padding: 10px 20px;
     font-size: 1rem;
     font-family: "Poppins", sans-serif;
-    font-weight: bold;
+    font-weight: normal;
     text-decoration: none;
     color: #fff;
     background-color: #131919;

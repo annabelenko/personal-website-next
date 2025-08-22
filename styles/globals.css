@@ -5,6 +5,14 @@
   margin: 0;
 }
 
+body {
+  cursor: url('/cursor.png') 10 10, pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   max-width: 100vw;

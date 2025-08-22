@@ -4,11 +4,10 @@
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background: #131919;
+  border-bottom: 1px solid #333;
   z-index: 1000;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   transition: all 0.3s ease;
   font-family: 'Poppins', sans-serif;
 }
@@ -24,20 +23,19 @@
 
 /* Brand/Logo */
 .brand {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .brandLink {
   text-decoration: none;
-  color: #333;
+  color: #cccccc;
   font-family: 'Poppins', sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   transition: color 0.3s ease;
 }
 
 .brandLink:hover {
-  color: #0070f3;
+  color: #e6b800;
 }
 
 /* Navigation Links */
@@ -51,7 +49,7 @@
 
 .navLink {
   text-decoration: none;
-  color: #666;
+  color: #cccccc;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   padding: 0.5rem 1rem;
@@ -61,14 +59,14 @@
 }
 
 .navLink:hover {
-  color: #0070f3;
-  background-color: rgba(0, 112, 243, 0.1);
+  color: #e6b800;
+  background-color: rgba(230, 184, 0, 0.1);
 }
 
 /* Active link indicator (for future use) */
 .navLink.active {
-  color: #0070f3;
-  background-color: rgba(0, 112, 243, 0.15);
+  color: #e6b800;
+  background-color: rgba(230, 184, 0, 0.15);
 }
 
 /* Mobile Menu Button */
@@ -91,7 +89,7 @@
 }
 
 .mobileMenuButton:hover span {
-  background-color: #0070f3;
+  background-color: #e6b800;
 }
 
 /* Mobile Responsive */

@@ -1,0 +1,210 @@
+/* Projects Page Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 2rem 4rem; /* Top padding accounts for fixed navbar */
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #131919;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.highlight {
+  background-color: #ffd700;
+  color: #131919;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+/* Projects Grid */
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+/* Project Card */
+.projectCard {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projectCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Container */
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.projectImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.projectCard:hover .projectImage {
+  transform: scale(1.05);
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(19, 25, 25, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.projectCard:hover .overlay {
+  opacity: 1;
+}
+
+.overlayContent {
+  display: flex;
+  gap: 1rem;
+}
+
+.button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  background-color: #e6b800;
+  color: #131919;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #ffd700;
+  transform: translateY(-2px);
+}
+
+.button.secondary {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.button.secondary:hover {
+  background-color: white;
+  color: #131919;
+}
+
+/* Project Info */
+.projectInfo {
+  padding: 1.5rem;
+}
+
+.projectTitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #131919;
+  margin-bottom: 0.5rem;
+}
+
+.projectDescription {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+/* Technologies */
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.techTag {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 100px 1rem 2rem;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .projectsGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .overlayContent {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 90px 0.5rem 2rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+  
+  .projectsGrid {
+    gap: 1rem;
+  }
+  
+  .projectCard {
+    margin: 0 0.5rem;
+  }
+}

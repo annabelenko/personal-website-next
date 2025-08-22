@@ -1,6 +1,7 @@
 import * as React from "react";
 import { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { Typewriter } from 'react-simple-typewriter';
 import styles from "./Emoji.module.css";
 
 export const Emoji = () => {
@@ -54,12 +55,25 @@ export const Emoji = () => {
         drag
         dragConstraints={constraintsRef}
         />
+        <p className={styles["grab-hint"]}>
+          <em>did you know you can grab the smile?</em>
+        </p>
       </div>
 
       {/* Text Section */}
       <div className={styles["text-container"]}>
         <p className={styles["emoji-text"]}>Hello, I'm</p>
-        <h1 className={styles["emoji-text"]}>ANNA :)</h1>
+        <h1 className={styles["emoji-text"]}>
+          <Typewriter
+            words={['ANNA :)']}
+            loop={1}
+            cursor
+            cursorStyle="|"
+            typeSpeed={350}
+            deleteSpeed={50}
+            delaySpeed={1000}
+          />
+        </h1>
         <p className={styles["emoji-subtitle"]}>
           A passionate{" "}
           {isMobile ? (
@@ -75,7 +89,7 @@ export const Emoji = () => {
 
         {/* Resume Button */}
         <a
-          href="https://example.com/resume.pdf" // Replace with your actual resume link
+          href="https://docs.google.com/document/d/1eCIsecmqw6zLZmWJtBoaB1w1QGrZj6Esqb8LnENvOR8/edit?usp=sharing" 
           target="_blank"
           rel="noopener noreferrer"
           className={styles["resume-button"]}
