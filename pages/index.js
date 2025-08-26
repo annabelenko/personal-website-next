@@ -50,7 +50,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Anna Belenko - Software Engineer & Developer</title>
+        <title>Anna Belenko</title>
       </Head>
       
       <Navbar />
@@ -125,7 +125,7 @@ export default function Home() {
           <div className={styles.aboutContent}>
             <div className={styles.headshotContainer}>
               <img 
-                src="/headshot.jpeg" 
+                src="/headshot.jpg" 
                 alt="Anna Belenko"
                 className={styles.headshot}
               />
